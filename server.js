@@ -15,7 +15,7 @@ app.get('/api/search', (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, function () {
-  app.set("port",PORT);
+    log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), router))
 });
 
 module.exports = app;
